@@ -18,6 +18,7 @@
 </head>
 
 <body>
+   
    <!--==================== HEADER ====================-->
    <header class="header" id="header">
       <nav class="nav container">
@@ -59,9 +60,9 @@
    <main class="main">
       <!--==================== HOME ====================-->
       <section class="home section" id="home">
-         <img src="./assets/img/home-bg2.jpg" alt="home img" class="home__bg">
+         <img src="./assets/img/home-bg.jpg" alt="home img" class="home__bg">
          <div class="home__shadow"></div>
-
+         
          <div class="home__container container grid">
             <div class="home__data">
                <h3 class="home__subtitle">
@@ -78,6 +79,24 @@
                <a href="#" class="button">
                   Explore <i class="ri-arrow-right-line"></i>
                </a>
+               <!--================================= MUSIC CONTROLLER ===================== -->
+               <div class="audio-player">
+                  <img id="cover" src="./assets/img/music-bgm.jpg" alt="Song Cover" class="cover">
+                  <div class="info">
+                    <div class="title">
+                      <h3 id="title">Marriage BackGround Music</h3>
+                      <p id="artist">SFM</p>
+                    </div>
+                    <div class="controls">
+                      <button id="playPause" aria-label="Play"><i class="ri-play-line"></i></button>
+                      <div class="volume-control">
+                        <span><i class="ri-volume-up-line"></i></span>
+                        <input type="range" id="volume-slider" value="1" max="1" step="0.01">
+                      </div>
+                    </div>
+                  </div>
+                  <audio id="audio" src="./assets/img/website-bgm.mpeg" preload="metadata"></audio>
+                </div>
             </div>
 
             <div class="home__cards grid">
@@ -180,7 +199,7 @@
       <section class="explore section" id="explore">
          <div class="explore__container">
             <div class="explore__image">
-               <img src="./assets/img/explore-stage2.jpg" alt="explore image" class="explore__img">
+               <img src="./assets/img/explore-img.jpg" alt="explore image" class="explore__img">
                <div class="explore__shadow"></div>
             </div>
 
@@ -195,7 +214,7 @@
                </div>
 
                <div class="explore__user">
-                  <img src="./assets/img/explore-profile.jpg" alt="explore image" class="explore__profile">
+                  <img src="./assets/img/explore-user.jpg" alt="explore image" class="explore__profile">
                   <span class="explore__name">Sayan Das</span>
                </div>
             </div>
@@ -224,7 +243,7 @@
             </div>
 
             <div class="join__image">
-               <img src="./assets/img/join-mandap1.jpg" alt="join image" class="join__img">
+               <img src="./assets/img/join-img.jpg" alt="join image" class="join__img">
                <div class="join__shadow"></div>
             </div>
 
