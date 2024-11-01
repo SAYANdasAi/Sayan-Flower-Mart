@@ -66,12 +66,36 @@ window.addEventListener('scroll', scrollActive)
 const sr = ScrollReveal({
     origin:'top',
     distance:'60px',
-    duration:3000,
-    delay:400,
+    duration:2000,
+    delay:200,
     reset:true
 })
 sr.reveal(`.home__data, .explore__data, .explore__user, .footer__container`)
-sr.reveal(`.home__card`,{delay:600,distance:'100px',interval:100})
+sr.reveal(`.home__card`,{delay:400,distance:'100px',interval:80})
 sr.reveal(`.about__data, .join__image`,{origin:'right'})
 sr.reveal(`.about__image, .join__data`,{origin:'left'})
-sr.reveal(`.popular__card`,{interval:200})
+sr.reveal(`.popular__card`,{interval:100})
+
+
+// --------------------MUSIC CONTROLLER---------------------------
+
+const audio = document.getElementById('audio');
+const playPauseButton = document.getElementById('playPause');
+const volumeSlider = document.getElementById('volume-slider');
+
+let isPlaying = false;
+
+playPauseButton.addEventListener('click', () => {
+  if (isPlaying) {
+    audio.pause();
+    playPauseButton.innerHTML = '<i class="ri-play-line"></i>';
+  } else {
+    audio.play();
+    playPauseButton.innerHTML = '<i class="ri-pause-circle-line"></i>';
+  }
+  isPlaying = !isPlaying;
+});
+
+volumeSlider.addEventListener('input', (e) => {
+  audio.volume = e.target.value;
+});
