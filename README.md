@@ -26,11 +26,11 @@
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/SayanFlowerMart.git
+   https://github.com/SAYANdasAi/Sayan-Flower-Mart.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd SayanFlowerMart
+   cd Sayan-Flower-Mart
    ```
 3. Open `index.html` in your browser to explore the website.
 
