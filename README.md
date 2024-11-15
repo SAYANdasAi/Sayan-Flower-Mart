@@ -1,6 +1,6 @@
 # Sayan Flower Mart - Event Organizer | Portfolio Website (Work in Progress) 🌸
 
-![Home Page](./images/homepage.png) 
+![Home Page](./img/homepage.png) 
 
 ## Overview
 **Sayan Flower Mart** is a modern portfolio website dedicated to showcasing the event organizing services of Sayan Flower Mart, specializing in floral decorations, event planning, and related services. This website provides a glimpse into the brand’s aesthetic, emphasizing elegance and professionalism.
